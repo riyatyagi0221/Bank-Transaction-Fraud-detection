@@ -9,7 +9,7 @@ SQL (MYSQL): Advanced querying, Window Functions, CTEs, and Performance Tuning.
 Python (Pandas, Scipy, Matplotlib): Exploratory Data Analysis (EDA) and Statistical Hypothesis Testing.
 Power BI: Star schema modeling and interactive DAX dashboards.
 Excel: Data auditing and stakeholder reporting.
-
+kaggle: Data Source (Bank Transactions Dataset for Fraud Detection)
 
 Key Features & Analysis
 Instead of relying on visual trends, I utilized Python to perform:
