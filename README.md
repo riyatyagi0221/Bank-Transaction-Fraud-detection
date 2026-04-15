@@ -4,9 +4,9 @@ Project Overview:
 With the rapid growth of digital banking, financial institutions face increasing risks of fraudulent transactions, identity theft, and unauthorized access. Traditional rule-based systems often fail to detect evolving fraud patterns in real time.
 This project builds a data-driven fraud detection and risk analytics system using banking transaction data to:
 
-*Identify suspicious transaction patterns
-*Analyze behavioral risk signals
-*Enable proactive fraud detection using machine learning
+*Identify suspicious transaction patterns   
+*Analyze behavioral risk signals    
+*Enable proactive fraud detection using machine learning    
 
  Business Problem:
 
