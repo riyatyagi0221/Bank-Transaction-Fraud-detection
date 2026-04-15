@@ -1,28 +1,95 @@
-# Bank-Transaction-Fraud-detection
+# Bank Transaction Fraud Detection & Risk Analytics
 
-Project Overview
-This project analyzes 50,000 real-world bank transactions from 495 customer accounts (2020–2025). The goal was to transform raw transactional data into actionable business intelligence while ensuring data integrity, security (fraud detection), and system performance.
+Project Overview:
+With the rapid growth of digital banking, financial institutions face increasing risks of fraudulent transactions, identity theft, and unauthorized access. Traditional rule-based systems often fail to detect evolving fraud patterns in real time.
+This project builds a data-driven fraud detection and risk analytics system using banking transaction data to:
 
+*Identify suspicious transaction patterns
+*Analyze behavioral risk signals
+*Enable proactive fraud detection using machine learning
+
+ Business Problem:
+
+Banks need to-
+Detect fraudulent transactions early
+Reduce financial losses and false positives
+Improve customer trust and operational efficiency
+
+
+Dataset:
+50,000+ transactions
+Time range: 2020–2025
+Includes:
+Transaction details (amount, type, timestamp)
+Customer attributes (age, occupation)
+Behavioral signals (login attempts, transaction duration)
+Channel & device data (ATM, Online, Branch)
+
+
+Key Objectives:
+Perform exploratory data analysis (EDA) to uncover fraud patterns
+Engineer behavioral features for anomaly detection
+Build predictive models to classify fraudulent transactions
+Generate insights for risk-based decision making
+
+🛠️ Approach & Methodology
+1. Data Cleaning & Preprocessing
+Handled missing values and inconsistencies
+Standardized date-time formats
+Encoded categorical variables
+Created structured datasets for analysis
+
+2.. Exploratory Data Analysis (EDA)
+Identified transaction patterns across:
+Channels (ATM, Online, Branch)
+Time (monthly trends)
+Customer segments
+Detected anomalies such as:
+High-value transaction spikes
+Unusual login behavior
+Location/channel inconsistencies
+
+3. Feature Engineering
+Created key fraud indicators:
+Transaction amount bands
+Login risk levels
+Transaction velocity & frequency
+Suspicious transaction flags
+
+4. Machine Learning Models
+Implemented classification models:
+Logistic Regression
+Decision Tree
+Random Forest
+
+5. Risk & Fraud Insights
+Identified high-risk patterns:
+High-value debit transactions with multiple login attempts
+Online channel showing higher fraud exposure
+Behavioral anomalies stronger than static rules
+
+Key Insights
+High-risk transactions are strongly correlated with:
+Multiple login attempts
+High transaction amounts
+Online channels show higher fraud probability compared to physical channels
+Behavioral features outperform basic transaction rules in detecting fraud
+
+
+Dashboard & Reporting
+Built interactive dashboards (Tableau):
+Transaction trends over time
+Channel-wise risk distribution
+Fraud detection scatter plots (Amount vs Login Attempts)
+
+KPI tracking:
+Total Transactions
+Suspicious Rate
+Risk Score
 
 Tech Stack
-SQL (MYSQL): Advanced querying, Window Functions, CTEs, and Performance Tuning.
-Python (Pandas, Scipy, Matplotlib): Exploratory Data Analysis (EDA) and Statistical Hypothesis Testing.
-Power BI: Star schema modeling and interactive DAX dashboards.
-Excel: Data auditing and stakeholder reporting.
-kaggle: Data Source (Bank Transactions Dataset for Fraud Detection)
-
-Key Features & Analysis
-Instead of relying on visual trends, I utilized Python to perform:
-T-Tests & ANOVA: Confirmed that transaction behaviors vary significantly across different occupation segments ($p=0.0007$).
-Value at Risk (VaR): Calculated historical risk thresholds (95% and 99%) for Online vs. ATM channels.
-2. Advanced SQL Logic
-Fraud Detection: Created a composite risk score using CTEs to flag accounts with high login failures and suspicious transaction amounts.
-Customer Lifetime Value (CLV): Applied Window Functions and NTILE to segment customers based on 5-year spending habits.
-Performance Tuning: Optimized query speeds by 40% through strategic indexing and avoiding "anti-patterns" (like SELECT *).
-
-
-Key Business Insights
-High-Risk Alerts: 3.85% of transactions were identified as high-risk due to excessive login attempts (potential credential stuffing).
-Channel Preference: Branch transactions still account for the highest volume (34.6%), while Online transactions show the highest growth rate.
-Demographic Value: Customers aged 40–64 (Gen X/Boomers) hold the majority of "Premium" accounts ($10k+ balance).
+Python (Pandas, NumPy, Scikit-learn)
+SQL (data transformation & querying)
+Excel (data processing & validation)
+Tableau (dashboarding & reporting)
 
