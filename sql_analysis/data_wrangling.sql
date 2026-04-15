@@ -1,6 +1,6 @@
 select count(*) as total_logs from bank_transactions_data_;
 
--- 1a. Check for NULL values in every column (MySQL version)
+-- 1a. Check for NULL values in every column 
 SELECT
     SUM(transactionid IS NULL)        AS null_txn_id,
     SUM(transactionamount IS NULL)    AS null_amount,
@@ -16,7 +16,7 @@ FROM bank_transactions_data_
 GROUP BY transactionid
 HAVING COUNT(*) > 1;
 
--- 1c. Check for impossible/invalid values (MySQL Version)
+-- 1c. Check for impossible/invalid values 
 SELECT
     SUM(transactionamount <= 0)  AS invalid_amounts,
     SUM(customerage < 18 OR customerage > 100) AS invalid_ages,
